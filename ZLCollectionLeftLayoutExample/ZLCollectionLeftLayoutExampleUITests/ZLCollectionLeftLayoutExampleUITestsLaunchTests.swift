@@ -1,13 +1,13 @@
 //
-//  ZLCollectionLeftAlignLayoutExampleUITestsLaunchTests.swift
-//  ZLCollectionLeftAlignLayoutExampleUITests
+//  ZLCollectionLeftLayoutExampleUITestsLaunchTests.swift
+//  ZLCollectionLeftLayoutExampleUITests
 //
-//  Created by MacBook on 2023/9/8.
+//  Created by MacBook on 2023/9/28.
 //
 
 import XCTest
 
-final class ZLCollectionLeftAlignLayoutExampleUITestsLaunchTests: XCTestCase {
+final class ZLCollectionLeftLayoutExampleUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
