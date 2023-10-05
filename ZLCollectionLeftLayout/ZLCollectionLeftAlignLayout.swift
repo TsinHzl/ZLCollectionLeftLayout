@@ -8,7 +8,7 @@ import UIKit
 
 
 // MARK: - ZLCollectionLeftAlignLayout
-public class ZLCollectionLeftAlignLayout: UICollectionViewFlowLayout {
+open class ZLCollectionLeftAlignLayout: UICollectionViewFlowLayout {
     
     /// calculatedAttrs: used for storing calculated UICollectionViewLayoutAttributes to exchange space for time
     private lazy var calculatedAttrs = [IndexPath: UICollectionViewLayoutAttributes]()
@@ -16,7 +16,7 @@ public class ZLCollectionLeftAlignLayout: UICollectionViewFlowLayout {
     private var isHorizontal: Bool { scrollDirection == .horizontal }
     
     
-    public override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+    open override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let attrArr = super.layoutAttributesForElements(in: rect) else { return nil }
         
         var newAttrArr = attrArr
@@ -33,7 +33,7 @@ public class ZLCollectionLeftAlignLayout: UICollectionViewFlowLayout {
     /// main method for layout cell
     /// - Parameter indexPath: indexpath
     /// - Returns: layouted UICollectionViewLayoutAttributes
-    public override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+    open override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         if let attr = calculatedAttrs[indexPath] { return attr }
         
         guard let curAttr = super.layoutAttributesForItem(at: indexPath) else { return nil }

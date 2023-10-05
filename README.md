@@ -16,7 +16,7 @@
 ##### cocoapods
 
 - **pod 'ZLCollectionLeftLayout'**
-- or specify a version:  **pod 'ZLCollectionLeftLayout', '~> 0.0.3'**
+- or specify a version:  **pod 'ZLCollectionLeftLayout', '~> 0.0.6**
 
 ##### download framwork
 
@@ -64,7 +64,6 @@
 
 - screenshot
 ![266536021-549991a5-d521-4bf2-af28-47f4fb41a4ee](https://github.com/TsinHzl/ZLCollectionLeftLayout/assets/9133239/866ea316-b65a-4c38-a063-ca8bc5cb8429)
-
 
 
 
