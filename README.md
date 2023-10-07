@@ -3,6 +3,12 @@
 
 
 
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+
+
+
 #### Description
 
 -  layout collection cell from left to right automatically
