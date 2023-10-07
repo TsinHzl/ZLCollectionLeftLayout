@@ -11,7 +11,7 @@
 
 
 
-#### Install
+#### Installation
 
 ##### cocoapods
 
