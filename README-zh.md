@@ -1,9 +1,5 @@
 # ZLCollectionLeftLayout
-**left aligned CollectionView layout**
-
-
-
-**[中文版](https://github.com/TsinHzl/ZLCollectionLeftLayout/blob/master/README-zh.md)**
+**专用于CollectionView左对齐的layout**
 
 
 
@@ -15,9 +11,10 @@
 
 #### Description
 
--  layout collection cell from left to right automatically
-- when you set property **scrollDirection** to **.vertical**, it will automatically wrap
-- when you set property **scrollDirection** to **.horizontal**, and you might have to set height of colletion view to show only one line
+-  自动从左到右排列collection cell
+-  当设置属性**scrollDirection**值为**.vertical**时，会自动换行
+-  when you set property **scrollDirection** to **.horizontal**, and you might have to set height of colletion view to show only one line
+-  当设置属性**scrollDirection**值为**horizontal**时，最好设置colle view的高度成仅显示一行cell
 
 
 
@@ -26,22 +23,22 @@
 ##### cocoapods
 
 - **pod 'ZLCollectionLeftLayout'**
-- or specify a version:  **pod 'ZLCollectionLeftLayout', '~> 0.0.6**
+- 或者指定一个版本:  **pod 'ZLCollectionLeftLayout', '~> 0.0.6**
 
-##### download framwork
+##### 下载 framwork
 
-- download the repo.
-- and add **ZLCollectionLeftLayout.swift** to your project
+- 下载仓库代码
+- 然后添加 **ZLCollectionLeftLayout.swift** 文件到你的项目里即可
 
 #### Usage
 
-- import ZLCollectionLeftAlignLayout
+- 导入 ZLCollectionLeftAlignLayout
 
   - ```swift
     import ZLCollectionLeftLayout
     ```
 
-- set collectionViewLayout of collection view to a instance of ZLCollectionLeftLayout
+- 设置collection view的**collectionViewLayout**为ZLCollectionLeftLayout的一个实例对象
 
   - ```swift
     private lazy var collectionView: UICollectionView = {
@@ -59,7 +56,7 @@
     }()
     ```
 
-- impletation the method: 
+- 实现下面方法: 
 
   - ```swift
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize { 
@@ -72,7 +69,7 @@
 
 
 
-- screenshot
+- 截图示例
 ![266536021-549991a5-d521-4bf2-af28-47f4fb41a4ee](https://github.com/TsinHzl/ZLCollectionLeftLayout/assets/9133239/866ea316-b65a-4c38-a063-ca8bc5cb8429)
 
 
