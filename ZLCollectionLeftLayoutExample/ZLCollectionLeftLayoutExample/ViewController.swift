@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  ZLCollectionLeftAlignLayoutExample
+//  ZLCollectionLeftLayoutExample
 //
 //  Created by harllan on 2023/9/8.
 //

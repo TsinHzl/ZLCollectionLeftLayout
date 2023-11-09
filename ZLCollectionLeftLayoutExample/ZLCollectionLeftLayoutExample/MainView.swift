@@ -1,6 +1,6 @@
 //
 //  MainView.swift
-//  ZLCollectionLeftAlignLayoutExample
+//  ZLCollectionLeftLayoutExample
 //
 //  Created by harllan on 2023/9/8.
 //
@@ -10,7 +10,7 @@ import UIKit
 
 class MainView: UIView {
     private lazy var collectionView: UICollectionView = {
-        let defaultLayout = ZLCollectionLeftAlignLayout()
+        let defaultLayout = ZLCollectionLeftLayout()
         defaultLayout.minimumLineSpacing = 10.0
         defaultLayout.minimumInteritemSpacing = 10.0
         defaultLayout.scrollDirection = .vertical

@@ -1,5 +1,5 @@
 //
-//  ZLCollectionLeftAlignLayout.swift
+//  ZLCollectionLeftLayout.swift
 //
 //  Created by harllan on 2023/8/10.
 //
@@ -7,8 +7,8 @@
 import UIKit
 
 
-// MARK: - ZLCollectionLeftAlignLayout
-open class ZLCollectionLeftAlignLayout: UICollectionViewFlowLayout {
+// MARK: - ZLCollectionLeftLayout
+open class ZLCollectionLeftLayout: UICollectionViewFlowLayout {
     
     /// calculatedAttrs: used for storing calculated UICollectionViewLayoutAttributes to exchange space for time
     private lazy var calculatedAttrs = [IndexPath: UICollectionViewLayoutAttributes]()

@@ -1,6 +1,6 @@
 //
 //  MainCell.swift
-//  ZLCollectionLeftAlignLayoutExample
+//  ZLCollectionLeftLayoutExample
 //
 //  Created by MacBook on 2023/9/8.
 //
