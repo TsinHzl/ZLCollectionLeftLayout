@@ -1,6 +1,8 @@
 # ZLCollectionLeftLayout
 **专用于CollectionView左对齐的layout**
 
+- 截图示例
+![266536021-549991a5-d521-4bf2-af28-47f4fb41a4ee](https://github.com/TsinHzl/ZLCollectionLeftLayout/assets/9133239/866ea316-b65a-4c38-a063-ca8bc5cb8429)
 
 
 - [Description](#Description)
@@ -64,13 +66,6 @@
       return CGSize(width: 30.0 + w, height: 25.0)
     }
     ```
-
-  
-
-
-
-- 截图示例
-![266536021-549991a5-d521-4bf2-af28-47f4fb41a4ee](https://github.com/TsinHzl/ZLCollectionLeftLayout/assets/9133239/866ea316-b65a-4c38-a063-ca8bc5cb8429)
 
 
 
