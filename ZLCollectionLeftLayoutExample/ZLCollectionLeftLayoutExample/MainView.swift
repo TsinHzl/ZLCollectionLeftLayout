@@ -21,6 +21,8 @@ class MainView: UIView {
         return collectionView
     }()
     
+    private let cellId = "MainCellID"
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -35,7 +37,7 @@ class MainView: UIView {
         backgroundColor = .cyan
         addSubview(collectionView)
         
-        collectionView.register(MainCell.self, forCellWithReuseIdentifier: "MainCellID")
+        collectionView.register(MainCell.self, forCellWithReuseIdentifier: cellId)
         collectionView.delegate = self
         collectionView.dataSource = self
     }
@@ -49,7 +51,7 @@ extension MainView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainCellID", for: indexPath) as? MainCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? MainCell else {
             return UICollectionViewCell()
         }
         cell.titleLabel.text = "\(indexPath.row)"
