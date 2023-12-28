@@ -15,6 +15,12 @@ open class ZLCollectionLeftLayout: UICollectionViewFlowLayout {
     
     private var isHorizontal: Bool { scrollDirection == .horizontal }
     
+    open override func prepare() {
+        super.prepare()
+        
+        calculatedAttrs.removeAll()
+    }
+    
     
     open override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let attrArr = super.layoutAttributesForElements(in: rect) else { return nil }

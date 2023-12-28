@@ -23,6 +23,8 @@ class MainView: UIView {
     
     private let cellId = "MainCellID"
     
+    private var count = 200
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -47,7 +49,7 @@ class MainView: UIView {
 extension MainView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 300
+        return count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -62,5 +64,10 @@ extension MainView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
         
         let w = CGFloat.random(in: 20.0 ... 50.0)
         return CGSize(width: 30.0 + w, height: 25.0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        count = 400
+        collectionView.reloadData()
     }
 }
