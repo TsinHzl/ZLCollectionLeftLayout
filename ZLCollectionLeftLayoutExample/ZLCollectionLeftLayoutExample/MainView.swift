@@ -67,7 +67,7 @@ extension MainView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        count = 400
-        collectionView.reloadData()
+//        count = 400
+        collectionView.reloadItems(at: [IndexPath(row: 0, section: 0)])
     }
 }
