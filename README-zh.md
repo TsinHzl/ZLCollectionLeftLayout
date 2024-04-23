@@ -15,8 +15,7 @@
 
 -  自动从左到右排列collection cell
 -  当设置属性**scrollDirection**值为**.vertical**时，会自动换行
--  when you set property **scrollDirection** to **.horizontal**, and you might have to set height of colletion view to show only one line
--  当设置属性**scrollDirection**值为**horizontal**时，最好设置colle view的高度成仅显示一行cell
+-  当设置属性**scrollDirection**值为**horizontal**时，最好设置collection view的高度成仅显示一行cell
 
 
 
