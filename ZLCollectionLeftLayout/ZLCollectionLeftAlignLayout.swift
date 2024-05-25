@@ -50,7 +50,7 @@ open class ZLCollectionLeftLayout: UICollectionViewFlowLayout {
         }
         
         let sectionInset = calculateSectionInsetForItem(at: indexPath.section)
-        let layoutWidth = collectionView?.frame.width ?? 0 - sectionInset.left - sectionInset.right
+        let layoutWidth = (collectionView?.frame.width ?? 0) - sectionInset.left - sectionInset.right
         
         if indexPath.item == 0 {
             curAttr.frame.origin.x = sectionInset.left

@@ -28,7 +28,7 @@
 ##### cocoapods
 
 - **pod 'ZLCollectionLeftLayout'**
-- or specify a version:  **pod 'ZLCollectionLeftLayout', '~> 0.1.0'**
+- or specify a version:  **pod 'ZLCollectionLeftLayout', '~> 0.1.2'**
 
 ##### download framwork
 

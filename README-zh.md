@@ -24,7 +24,7 @@
 ##### cocoapods
 
 - **pod 'ZLCollectionLeftLayout'**
-- 或者指定一个版本:  **pod 'ZLCollectionLeftLayout', '~> 0.1.0**
+- 或者指定一个版本:  **pod 'ZLCollectionLeftLayout', '~> 0.1.2**
 
 ##### 下载 framwork
 
