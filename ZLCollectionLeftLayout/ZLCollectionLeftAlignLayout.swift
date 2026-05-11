@@ -26,10 +26,8 @@ open class ZLCollectionLeftLayout: UICollectionViewFlowLayout {
         guard let attrArr = super.layoutAttributesForElements(in: rect) else { return nil }
         
         return attrArr.map { attributes in
-            if attributes.representedElementKind == nil {
-                return layoutAttributesForItem(at: attributes.indexPath) ?? attributes
-            }
-            return attributes
+            guard attributes.representedElementKind == nil else { return attributes }
+            return layoutAttributesForItem(at: attributes.indexPath) ?? attributes
         }
     }
     

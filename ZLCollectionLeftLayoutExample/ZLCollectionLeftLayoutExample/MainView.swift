@@ -66,7 +66,9 @@ extension MainView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: itemWidths[indexPath.item], height: 25.0)
+        let index = indexPath.item
+        let width = index < itemWidths.count ? itemWidths[index] : 50.0
+        return CGSize(width: width, height: 25.0)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
