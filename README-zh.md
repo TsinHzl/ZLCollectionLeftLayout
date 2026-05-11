@@ -38,7 +38,7 @@
 ```ruby
 pod 'ZLCollectionLeftLayout'
 # 或指定版本：
-pod 'ZLCollectionLeftLayout', '~> 0.1.2'
+pod 'ZLCollectionLeftLayout', '~> 0.1.3'
 ```
 
 ### 手动集成

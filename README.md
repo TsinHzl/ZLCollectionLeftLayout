@@ -38,7 +38,7 @@
 ```ruby
 pod 'ZLCollectionLeftLayout'
 # or pin a version:
-pod 'ZLCollectionLeftLayout', '~> 0.1.2'
+pod 'ZLCollectionLeftLayout', '~> 0.1.3'
 ```
 
 ### Manual
