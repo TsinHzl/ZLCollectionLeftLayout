@@ -9,7 +9,7 @@ import UIKit
 
 class MainCell: UICollectionViewCell {
     private(set) lazy var titleLabel: UILabel = {
-        let label = UILabel(frame: bounds)
+        let label = UILabel(frame: .zero)
         label.textColor = .white
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 14.0)

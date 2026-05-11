@@ -25,6 +25,10 @@ class MainView: UIView {
     
     private var count = 200
     
+    private lazy var itemWidths: [CGFloat] = (0..<count).map { _ in
+        30.0 + CGFloat.random(in: 20.0 ... 50.0)
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -38,6 +42,7 @@ class MainView: UIView {
     private func setupView() {
         backgroundColor = .cyan
         addSubview(collectionView)
+        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         collectionView.register(MainCell.self, forCellWithReuseIdentifier: cellId)
         collectionView.delegate = self
@@ -61,9 +66,7 @@ extension MainView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let w = CGFloat.random(in: 20.0 ... 50.0)
-        return CGSize(width: 30.0 + w, height: 25.0)
+        return CGSize(width: itemWidths[indexPath.item], height: 25.0)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

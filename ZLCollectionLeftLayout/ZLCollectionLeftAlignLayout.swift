@@ -25,15 +25,12 @@ open class ZLCollectionLeftLayout: UICollectionViewFlowLayout {
     open override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let attrArr = super.layoutAttributesForElements(in: rect) else { return nil }
         
-        var newAttrArr = attrArr
-        
-        for attributes in attrArr where attributes.representedElementKind == nil {
-            if let index = newAttrArr.firstIndex(of: attributes) {
-                newAttrArr[index] = layoutAttributesForItem(at: attributes.indexPath) ?? attributes
+        return attrArr.map { attributes in
+            if attributes.representedElementKind == nil {
+                return layoutAttributesForItem(at: attributes.indexPath) ?? attributes
             }
+            return attributes
         }
-        
-        return newAttrArr
     }
     
     /// main method for layout cell
@@ -42,7 +39,7 @@ open class ZLCollectionLeftLayout: UICollectionViewFlowLayout {
     open override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         if let attr = calculatedAttrs[indexPath] { return attr }
         
-        guard let curAttr = super.layoutAttributesForItem(at: indexPath) else { return nil }
+        guard let curAttr = super.layoutAttributesForItem(at: indexPath)?.copy() as? UICollectionViewLayoutAttributes else { return nil }
         
         if isHorizontal {
             calculatedAttrs[indexPath] = curAttr
