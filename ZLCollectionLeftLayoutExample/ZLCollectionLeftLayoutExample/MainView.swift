@@ -23,6 +23,7 @@ class MainView: UIView {
     
     private let cellId = "MainCellID"
     
+    private let defaultItemWidth: CGFloat = 50.0
     private var count = 200
     
     private lazy var itemWidths: [CGFloat] = (0..<count).map { _ in
@@ -67,7 +68,7 @@ extension MainView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let index = indexPath.item
-        let width = index < itemWidths.count ? itemWidths[index] : 50.0
+        let width = index < itemWidths.count ? itemWidths[index] : defaultItemWidth
         return CGSize(width: width, height: 25.0)
     }
     
